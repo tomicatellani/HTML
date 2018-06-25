@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prueba</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald:200,300,400,500,600,700|Yantramanav" rel="stylesheet">
+  </head>
+  <body>
+    <div id="titulo">Bienvenido</div>
+    <style>
+
+      #titulo {
+        animation-name: animacion_inicio;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        font-family: Oswald;
+        font-size: 40pt;
+        font-weight: 500;
+        text-align: center;
+        position: absolute;
+        padding: 50vh;
+        top: 0; left: 0; right: 0; bottom: 0;
+      }
+      /* #ff1e78 #ef2fb9*/
+      @keyframes animacion_inicio {
+        0% {background-color: white; color: white;}
+        15% {background: var(--color1); color: var(--color1);}
+        20% {background: var(--color1); color: var(--color1);}
+        30% {background: var(--color1); color: white;}
+        50% {background: var(--color1); color: white;}
+        70% {background: var(--color2); color: var(--color1);}
+        90% {background: var(--color2); color: var(--color1);}
+        100% {color: var(--color2); visibility: hidden;}
+
+      }
+
+      :root {
+        --color1: linear-gradient(-90deg, #ff1e78, #ef2fb9);
+        --color2: linear-gradient(-90deg, #ef2fb9, #ff1e78);
+      }
+    </style>
+  </body>
+</html>
